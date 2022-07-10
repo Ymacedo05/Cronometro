@@ -17,6 +17,7 @@
 
 html, body{
     height: 100%;
+    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +44,7 @@ body{
     position: relative;
     background-color: var(--contraste);
     margin-bottom: 35%;
+    margin-right: 16px;
 
 }
 
