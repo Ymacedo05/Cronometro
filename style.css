@@ -109,7 +109,7 @@ body{
     width: 50px;
     height: 30px;
     border-radius: 10px;
-    background-color: var(--cont01);
+    background-color: var(--cont02);
     z-index: -1;
     box-shadow: none;
     border: none;
