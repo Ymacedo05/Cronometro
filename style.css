@@ -92,8 +92,8 @@ body{
     border-radius: 20px;
     padding: 10px;
     font-weight: 800;
-    margin: 4px;
-    box-shadow: 2px 2px 3px var(--cont01);
+    margin: 5px;
+
 }
 
 #controle button:active{
