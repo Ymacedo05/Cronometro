@@ -29,6 +29,7 @@ body{
     background: black;
     color: slategray;
     background: var(--bg01);
+    margin-right: 16px;
 }
 
 #cronometro{
@@ -44,7 +45,7 @@ body{
     position: relative;
     background-color: var(--contraste);
     margin-bottom: 35%;
-    margin-right: 16px;
+
 
 }
 

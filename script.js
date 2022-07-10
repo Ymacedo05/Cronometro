@@ -56,6 +56,8 @@ function executar(x) {
         t++
         console.log(`Após atribuição do INICIAR, t vale: ${t}`)
 
+        
+
         if(t == 2) {
             console.log(t)
 
