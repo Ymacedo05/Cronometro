@@ -1,0 +1,134 @@
+
+:root{
+    --bg01: #D4E4BC;
+    --bg02: #96ACB7;
+    --cont01: #FFA987;
+    --cont02: #E54B4B;
+    --contraste: #48233C;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    color: slategray;
+    background: var(--bg01);
+}
+
+#cronometro{
+
+    border: 7px solid var(--contraste);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--contraste);
+    margin-bottom: 35%;
+
+}
+
+#cronometro:after {
+    content: '';
+    background-color: var(--contraste);
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 30%;
+    border-radius: 50%;
+    transform: perspective(268px) rotateX(44deg) translateY(136px);
+    filter: blur(7px);
+    opacity: 0.3;
+}
+
+#cronometro #tempo{
+    font-size: 4em;
+    height: 70px;
+    width: 70%;
+    text-align: center;
+    color: green;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--cont02);
+    background: var(--bg02);
+    border: 0px;
+    box-shadow: 2px 2px 4px rgb(76, 76, 76);
+}
+
+#controle{
+    margin-top: 15%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#controle button{
+    font-size: 1.2em;
+    background: var(--cont02);
+    color: var(--bg01);
+    border: 3px solid var(--cont02);
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 800;
+    margin: 4px;
+    box-shadow: 2px 2px 3px var(--cont01);
+}
+
+#controle button:active{
+    background-color: transparent;
+    color: var(--cont02);
+    
+}
+
+#controle #iniciar{
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--cont01);
+    z-index: -1;
+    box-shadow: none;
+    border: none;
+}
+
+#controle #iniciar:active{
+    animation: ani 1s;
+}
+
+
+@keyframes ani {
+    0%{
+        right: -40px;}
+
+    50%{
+        right: -20px;
+    }
+
+    100%{
+        right: -40px;
+    }
+}
+
+
